@@ -1,4 +1,7 @@
-<?php $Scrivi = $_GET["Scrivi"];?>
+<?php $Scrivi = $_GET["Scrivi"];
+var_dump($_GET);
+?>
+
 
 
 <!DOCTYPE html>
@@ -11,6 +14,8 @@
   <link  href="style.css" rel="stylesheet">
 </head>
 <body>
+
+
 <form action="paragrafo.php" method="GET">
   <label for="Scrivi">Scrivi</label>
   <input type="text" id="Scrivi" name="Scrivi">
@@ -20,15 +25,15 @@
 
 <?php echo $Scrivi;?>
  
-<?php $pararafo = " lorem22 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis porro nobis et consequuntur tempore, itaque consectetur quae atque tenetur alias minus nemo sapiente aperiam tempora, aliquid repellendus. Temporibus, reprehenderit"; ?>
- <p><?php echo $pararafo;?></p>
+<?php $paragrafo = "lorem22 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis porro nobis et consequuntur tempore, itaque consectetur quae atque tenetur alias minus nemo sapiente aperiam tempora, aliquid repellendus. Temporibus, reprehenderit"; ?>
+ <p><?php echo $paragrafo;?></p>
 
 
 
  <h1>Cambio la parola ,,ipsum" con le "***"</h1>
- <?php $nuovo_pararafo = str_replace("ipsum", "***", $pararafo);?>
+ <?php $nuovo_paragrafo = str_replace("ipsum", "***", $paragrafo);?>
 
 
- <p><?php echo $nuovo_pararafo;?></p>
+ <p><?php echo $nuovo_paragrafo;?></p>
 </body>
 </html>
